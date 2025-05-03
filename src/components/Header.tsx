@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <header className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'}`}>
       <div className="container-custom flex items-center justify-between">
-        <a href="#" className="text-2xl font-heading font-bold gradient-text">Ibrahim A.</a>
+        <a href="#" className="text-2xl font-heading font-bold gradient-text">Ariful</a>
         
         <div className="hidden md:flex items-center gap-8">
           <nav>
@@ -42,7 +42,15 @@ const Header = () => {
               <li><a href="#contact" className="font-medium hover:text-primary transition-colors">Contact</a></li>
             </ul>
           </nav>
-          <Button className="gradient-bg">Hire Me</Button>
+          <Button asChild className="gradient-bg" size="lg">
+                <a
+                  href="https://www.upwork.com/freelancers/~yourprofileid"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Hire Me
+                </a>
+              </Button>
         </div>
 
         <button className="md:hidden text-2xl" onClick={toggleMenu}>

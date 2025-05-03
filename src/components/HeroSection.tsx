@@ -5,11 +5,12 @@ import { ArrowDown, Facebook, Instagram, Linkedin, Twitter, Youtube } from "luci
 
 const HeroSection = () => {
   const socialLinks = [
-    { icon: <Facebook className="w-5 h-5" />, href: "#", label: "Facebook" },
-    { icon: <Instagram className="w-5 h-5" />, href: "#", label: "Instagram" },
-    { icon: <Twitter className="w-5 h-5" />, href: "#", label: "Twitter" },
-    { icon: <Linkedin className="w-5 h-5" />, href: "#", label: "LinkedIn" },
-    { icon: <Youtube className="w-5 h-5" />, href: "#", label: "YouTube" },
+    { icon: <Facebook className="w-5 h-5" />, href: "https://facebook.com/arifulsarder", label: "Facebook" },
+    { icon: <Instagram className="w-5 h-5" />, href: "https://instagram.com/arifulsarder", label: "Instagram" },
+    { icon: <Twitter className="w-5 h-5" />, href: "https://twitter.com/arifulsarder", label: "Twitter" },
+    { icon: <Linkedin className="w-5 h-5" />, href: "https://linkedin.com/in/arifulsarder", label: "LinkedIn" },
+    { icon: <Youtube className="w-5 h-5" />, href: "https://youtube.com/@arifulsarder", label: "YouTube" },
+// ... existing code ...
   ];
 
   return (
@@ -22,7 +23,7 @@ const HeroSection = () => {
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 opacity-0 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <span className="block">Hi, I'm</span>
-              <span className="gradient-text">Ibrahim A.</span>
+              <span className="gradient-text">Ariful Sarder</span>
             </h1>
             
             <h2 className="text-lg md:text-xl lg:text-2xl mb-6 opacity-0 animate-slide-up" style={{ animationDelay: '0.4s' }}>
@@ -39,8 +40,14 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start opacity-0 animate-fade-in" style={{ animationDelay: '0.8s' }}>
-              <Button className="gradient-bg" size="lg">
-                Hire Me
+            <Button asChild className="gradient-bg" size="lg">
+                <a
+                  href="https://www.upwork.com/freelancers/~yourprofileid"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Hire Me
+                </a>
               </Button>
               <Button variant="outline" size="lg">
                 Download Resume
@@ -71,7 +78,7 @@ const HeroSection = () => {
               <div className="relative bg-white dark:bg-gray-800 rounded-full overflow-hidden aspect-square shadow-lg border-8 border-white dark:border-gray-800">
                 <img 
                   src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7" 
-                  alt="Ibrahim A. - Social Media Expert" 
+                  alt="Ariful - Social Media Expert" 
                   className="w-full h-full object-cover"
                 />
               </div>
